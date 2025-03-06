@@ -1,0 +1,8 @@
+<main class="mainpage">
+    <button class="exitBtn" (click)="exit()">&times;</button>
+    <button class="chatBtn" (click)="goChat()">
+        <img [src]="chatImg" alt="chat" />
+    </button>
+    <app-swiper-component></app-swiper-component>
+    <app-angular-walkthrough [titles]="titles"></app-angular-walkthrough>
+</main>

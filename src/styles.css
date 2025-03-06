@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap');
+
+* {
+    font-family: 'Gilroy', sans-serif;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+}
+
+.calistoga-font {
+    font-family: 'Calistoga', cursive;
+}
+
+:root {
+    --lib-primary-button-text-shadow: 0px 0px 20.000049591064453px #FE3C72, 0px 0px 20.000049591064453px #FE3C72, 0px 0px 4.000010013580322px #FFF;
+    --lib-secondary-button-text-shadow: 0px 0px 47.31624221801758px #FE3C72, 0px 0px 16px #FE3C72;
+
+}
+
+.defaultTextStyle {
+    font-weight: 400;
+    font-size: 16.41px;
+    line-height: 160%;
+    color: #FFFFFF;
+    letter-spacing: 0%;
+    text-shadow: 0px 0px 5.74px #FFFFFF;
+}

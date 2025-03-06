@@ -1,0 +1,6 @@
+<div class="walkthrough-container">
+    <ul>
+        <li *ngFor="let title of titles; let i = index" [attr.ng-walkthrough]="'step' + i" 
+        class="defaultTextStyle walkthrough-text">{{title}}</li>
+    </ul>
+</div>
