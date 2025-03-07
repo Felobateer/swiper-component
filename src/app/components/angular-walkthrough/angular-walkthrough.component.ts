@@ -1,35 +1,33 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit, Inject } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgWalkthroughService } from 'ng-walkthrough';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-angular-walkthrough',
   standalone: true,
-  imports: [CommonModule, BrowserModule],
+  imports: [CommonModule],
   templateUrl: './angular-walkthrough.component.html',
   styleUrls: ['./angular-walkthrough.component.css']
 })
 export class AngularWalkthroughComponent implements OnInit {
   @Input() titles: string[];
+  walkthroughSteps: any[];
 
-  constructor(@Inject(NgWalkthroughService) private walkthroughService: NgWalkthroughService) {
+  constructor() {
     this.titles = [];
+    this.walkthroughSteps = [];
   }
 
   ngOnInit() {
-    this.startWalkthrough();
+    this.prepareWalkthroughSteps();
   }
 
-  startWalkthrough() {
-    this.walkthroughService.startWalkthrough({
-      steps: this.titles.map((title, index) => ({
-        selector: `[ng-walkthrough="step${index}"]`,
-        description: title,
-        position: 'bottom',
-        arrow: true,
-        arrowPosition: 'top'
-      }))
-    });
+  prepareWalkthroughSteps() {
+    this.walkthroughSteps = this.titles.map((title, index) => ({
+      selector: `[ng-walkthrough="step${index}"]`,
+      description: title,
+      position: 'bottom',
+      arrow: true,
+      arrowPosition: 'top'
+    }));
   }
 }

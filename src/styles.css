@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap');
+@import "~angular-walkthrough/styles.css"; 
 
 * {
     font-family: 'Gilroy', sans-serif;
