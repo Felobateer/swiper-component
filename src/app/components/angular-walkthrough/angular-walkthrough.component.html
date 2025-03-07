@@ -1,8 +1,13 @@
-<div class="walkthrough-container">
-    <ul>
-        <li *ngFor="let title of titles; let i = index" [attr.ng-walkthrough]="'step' + i" 
-        class="defaultTextStyle walkthrough-text">{{title}}</li>
-    </ul>
+<div class="swiper-container">
+  <ul class="swiper-list">
+    <li 
+      *ngFor="let title of titles; let i = index" 
+      (click)="onItemClick(i)" 
+      [class.selected]="i === selectedIndex"
+      class="swiper-item defaultTextStyle">
+      {{ title }}
+    </li>
+  </ul>
 </div>
 
-<walkthrough [steps]="walkthroughSteps"></walkthrough>
+  

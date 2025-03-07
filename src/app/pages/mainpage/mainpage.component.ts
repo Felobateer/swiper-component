@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent implements OnInit {
-  chatImg: string = 'assets/icons/chat.png';
+  // chatImg: string = require('assets/icons/chat.ico');
   titles: string[];
   descriptions: string[];
   language: string;

@@ -13,18 +13,28 @@
     position: fixed;
     top: 30px;
     left: 30px;
-    text-shadow: var(--lib-primary-button-text-shadow);
+    border-radius: 50%;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+}
+
+.exitBtn p {
+    font-size: 24px;
+    margin: 0;
 }
 
 .chatBtn {
     position: fixed;
     top: 130px;
-    right: 50px;
+    right: 35px;
+    background-color: transparent;
     border-radius: 50%;
     text-shadow: var(--lib-primary-button-text-shadow);
 }
 
 .chatBtn img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
 }
