@@ -4,11 +4,12 @@ import { AngularWalkthroughComponent } from '../../components/angular-walkthroug
 import { SwiperComponentComponent } from '../../components/swiper-component/swiper-component.component';
 import { LangService } from '../../services/lang.service';
 import { Content } from '../../interfaces/content';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-mainpage',
   standalone: true,
-  imports: [AngularWalkthroughComponent, SwiperComponentComponent],
+  imports: [CommonModule ,AngularWalkthroughComponent, SwiperComponentComponent],
   templateUrl: './mainpage.component.html',
   styleUrls: ['./mainpage.component.css']
 })

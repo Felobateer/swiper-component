@@ -1,18 +1,19 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Inject } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgWalkthroughService } from 'ng-walkthrough';
 
 @Component({
   selector: 'app-angular-walkthrough',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, BrowserModule],
   templateUrl: './angular-walkthrough.component.html',
   styleUrls: ['./angular-walkthrough.component.css']
 })
 export class AngularWalkthroughComponent implements OnInit {
   @Input() titles: string[];
 
-  constructor(private walkthroughService: NgWalkthroughService) {
+  constructor(@Inject(NgWalkthroughService) private walkthroughService: NgWalkthroughService) {
     this.titles = [];
   }
 

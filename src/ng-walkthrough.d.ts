@@ -12,7 +12,7 @@ declare module 'ng-walkthrough' {
   }
 
   export class NgWalkthroughService {
-    startWalkthrough(options: WalkthroughOptions): void;
+    startWalkthrough(options: any): void;
   }
 
   export class NgWalkthroughModule {}
