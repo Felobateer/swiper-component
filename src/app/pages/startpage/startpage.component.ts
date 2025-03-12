@@ -15,4 +15,8 @@ export class StartpageComponent {
   goMain() {
     this.router.navigate(['/main']);
   }
+
+  goTuturial() {
+    this.router.navigate(['/tutorial']);
+  }
 }
