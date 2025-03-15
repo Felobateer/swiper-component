@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit, Renderer2, ElementRef } from '@angular/core';
-
+import * as ngWalkthrough from 'ng-walkthrough';
 @Component({
   selector: 'app-angular-walkthrough',
   standalone: true,
@@ -51,5 +51,6 @@ export class AngularWalkthroughComponent implements OnInit {
     // Set the transform style to center the selected item
     this.renderer.setStyle(swiperList, 'transform', transformValue);
   }
+  
   
 }

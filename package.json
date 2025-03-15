@@ -19,7 +19,7 @@
     "@angular/router": "^19.2.0",
     "@ngx-translate/core": "^16.0.4",
     "@ngx-translate/http-loader": "^16.0.1",
-    "ngx-tour-md-menu": "^4.2.0",
+    "ng-walkthrough": "^1.0.4",
     "rxjs": "~7.8.0",
     "swiper": "^11.2.5",
     "tslib": "^2.3.0",
@@ -36,6 +36,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^19.2.0",
     "typescript": "~5.7.2"
   }
 }

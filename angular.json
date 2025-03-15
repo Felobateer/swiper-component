@@ -91,6 +91,39 @@
           }
         }
       }
+    },
+    "cyrano-showcase": {
+      "projectType": "library",
+      "root": "projects/cyrano-showcase",
+      "sourceRoot": "projects/cyrano-showcase/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/cyrano-showcase/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/cyrano-showcase/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/cyrano-showcase/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/cyrano-showcase/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
